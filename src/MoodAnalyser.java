@@ -1,6 +1,18 @@
 
 public class MoodAnalyser {
-public static void main(String[] args) {
-	System.out.println("welcome");
-	}
+    private String msg;
+
+    public MoodAnalyser() {
+    }
+
+    public MoodAnalyser(String msg){
+        this.msg = msg;
+    }
+
+    public String analyseMood() {
+        if(msg.contains("sad")){
+            return "Sad";
+        }
+        return "Happy";
+    }
 }
